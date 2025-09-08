@@ -1,3 +1,4 @@
+from dotenv import load_dotenv
 import os
 import asyncio
 import aiohttp
@@ -6,6 +7,8 @@ from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 # ========== CONFIG ==========
+load_dotenv()
+
 API_ID = int(os.getenv("API_ID"))
 API_HASH = os.getenv("API_HASH")
 BOT_TOKEN = os.getenv("BOT_TOKEN")
