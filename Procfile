@@ -1,1 +1,0 @@
-worker: python anime_bot.py
